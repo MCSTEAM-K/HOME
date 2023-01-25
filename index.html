@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="login-box">
+        <h2>Login</h2><br>
+        <form name="login">
+            <div id="error-message"></div><br>
+            <div class="user-box">
+                <input type="text" name="username" id="username" required="">
+                <label>USERNAME:</label>
+            </div>
+            <div class="user-box">
+                <input type="password" name="password" id="password" required="">
+                <label>Password:</label>
+            </div>
+            <div class="checkbox">
+                <label class="checkboxlabel">Show Password</label> 
+                <input type="checkbox" onclick="show()" class="smallbox">
+            </div>
+            <div class="buttons">
+                <div class="button1">
+                    <button type="submit" class="button" name="loginButton">Login</button>
+                </div>
+                <div class="button2">
+                    <button type="reset" class="button" name="clearButton">Clear</button>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <script>
+        const form = document.forms.login;
+        const username = form.username;
+        const password = form.password;
+
+        form.addEventListener('submit', function(event){
+            event.preventDefault();
+
+            if(username.value == 'florante' && password.value == 'mcsflorante'){
+                window.location.assign("florante.html")
+            }
+            else if (username.value == 'gilbert' && password.value == 'mcsgilbert'){
+                window.location.assign("gilbert.html")
+            }
+            else if(username.value == 'nheil' && password.value == 'mcsnheil'){
+                window.location.assign("nheil.html")
+            }
+            else{
+                document.getElementById('error-message').innerText = 'Username and Password did not match'
+                document.getElementById('error-message').style.color = 'red'
+            }
+        })
+
+        form.addEventListener('reset', function(event){
+            event.preventDefault();
+            document.getElementById('error-message').innerText = '';
+            document.getElementById('username').value = '';
+            document.getElementById('password').value = '';
+        })
+
+        function show(){
+            var input = document.getElementById('password');
+            if(input.type === 'password'){
+                input.type = 'text'}
+            else{
+                input.type = 'password'
+            }
+        }
+
+    </script>
+</body>
+</html>
