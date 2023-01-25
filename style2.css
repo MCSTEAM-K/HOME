@@ -1,0 +1,267 @@
+html {
+    height: 100vh;
+    position: relative;
+  }
+
+  img{
+    position: absolute;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+  }
+
+  body {
+    margin:0;
+    padding:0;
+    height: 100vh;
+    font-family: sans-serif;
+    background: linear-gradient(#141e30, #243b55);
+  }
+  
+  .login-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    padding: 40px;
+    transform: translate(-50%, -50%);
+    background: rgba(0,0,0,.5);
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px rgba(0,0,0,.6);
+    border-radius: 10px;
+  }
+  
+  .button{
+    background: linear-gradient(#141e30, #243b55);
+  }
+  
+  .buttons{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  #checkbox{
+    display: grid;
+    grid-template-columns: 50px 50px;
+    justify-content: space-between;
+  }
+
+  #column1{
+    display: flex;
+    grid-column: 1/2;
+  }
+
+  #column2{
+    display: flex;
+    grid-column: 2/3;
+    align-items: center;
+  }
+
+  .checkboxlabel, h2, h3, h4, h5, h6{
+    color: white;
+  }
+
+  .login-box h2 {
+    margin: 0 0 30px;
+    padding: 0;
+    color: #fff;
+    text-align: center;
+  }
+  
+  .login-box .user-box {
+    position: relative;
+  }
+  
+  .login-box .user-box input {
+    width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    margin-bottom: 30px;
+    border: none;
+    border-bottom: 1px solid #fff;
+    outline: none;
+    background: transparent;
+  }
+  .login-box .user-box label {
+    position: absolute;
+    top:0;
+    left: 0;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    pointer-events: none;
+    transition: .5s;
+  }
+  
+  .login-box .user-box input:focus ~ label,
+  .login-box .user-box input:valid ~ label {
+    top: -20px;
+    left: 0;
+    color: #03e9f4;
+    font-size: 12px;
+  }
+  
+  .button {
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    color: #03e9f4;
+    font-size: 16px;
+    text-decoration: none;
+    text-transform: uppercase;
+    overflow: hidden;
+    transition: .5s;
+    margin-top: 40px;
+    letter-spacing: 4px
+  }
+  
+  .button:hover {
+    background: #03e9f4;
+    color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #03e9f4,
+                0 0 25px #03e9f4,
+                0 0 50px #03e9f4,
+                0 0 100px #03e9f4;
+  }
+  
+  .login-box .span{
+    position: absolute;
+    display: block;
+  }
+  
+.grid{
+    display: grid;
+    height: 750px;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    grid-template-rows: 10% 15% 30% 45%;
+}
+
+.sidebar{
+    grid-column: 1/2;
+    grid-row: 1/5;
+    padding: 0px 20px;
+    margin: 20px;
+    background: rgba(0,0,0,.5);
+    border-radius: 10px;
+}
+
+.sidebartabs{
+    padding: 10px 0px;
+}
+
+.fieldresult{
+    padding-left: 20px;
+}
+
+.cbs, .rbank, .bmi, .unistar{
+    display: none;
+    padding-left: 20px;
+}
+
+a{
+    text-decoration: none;
+}
+
+.header{
+    grid-column: 2/6;
+    grid-row: 1/2;
+    padding: 0PX 20px;
+    margin: 20px;
+    border-radius: 10px;
+}
+
+.box1{
+    grid-column: 2/3;
+    grid-row: 2/3;
+    margin: 20px;
+    padding: 5px;
+    background: rgba(0,0,0,.5);
+    border-radius: 10px;
+}
+
+.box2{
+    grid-column: 3/4;
+    grid-row: 2/3;
+    margin: 20px;
+    padding: 5px;
+    background: rgba(0,0,0,.5);
+    border-radius: 10px;
+}
+
+.box3{
+    grid-column: 4/5;
+    grid-row: 2/3;
+    margin: 20px;
+    padding: 5px;
+    background: rgba(0,0,0,.5);
+    border-radius: 10px; 
+}
+
+.box4{
+    grid-column: 5/6;
+    grid-row: 2/3;
+    margin: 20px;
+    padding: 5px;
+    background: rgba(0,0,0,.5);
+    border-radius: 10px;  
+}
+
+.box5{
+    grid-column: 2/6;
+    grid-row: 3/4;
+    padding: 20px;
+    margin: 20px;
+    background: rgba(0,0,0,.5);
+    border-radius: 10px; 
+}
+
+.box6{
+    grid-column: 2/6;
+    grid-row: 4/5;
+    padding: 20px;
+    margin: 20px;
+    background: rgba(0,0,0,.5);
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px rgba(0,0,0,.6);
+    border-radius: 10px;
+    background-blend-mode: color;  
+}
+
+hr{
+    color: white;
+    border: 1px solid white;
+}
+
+.grid2{
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.boxlabel{
+    grid-column: 1/2;
+    display: flex;
+    align-items: center;
+    padding: 0px 10px;
+}
+
+.boxdata{
+    grid-column: 2/3;
+    margin: 5px;
+    background-color:aliceblue;
+    border: 3px solid blue ;
+    border-radius: 10px;
+}
+
+.grid3{
+    display: grid;
+    grid-template-columns: 40% 60%;
+  }
+
+.logo{
+    border: 3px solid black;
+    height: inherit;
+    width: inherit;
+}
