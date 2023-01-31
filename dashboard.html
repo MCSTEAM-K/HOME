@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DASHBOARD</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+    <img src="image/background.jpg">
+    <div class="grid">
+        <div class="sidebar">
+            <div class="grid3">
+                <div class="column1">
+                    <img src="image/mcsc.png" class="logo">
+                </div>
+                <div class="column2">
+                    <h3 style="color: yellow;">MAUTIGU COLLECTION SERVICES CORPORATION</h3>
+                </div>
+            </div>
+            <hr>
+            <div class="sidebartabs">
+                <a href=""><h3  style="color: aqua;">FIELD REPORT</h3></a>
+                <div class="fieldresult">
+                    <div>
+                        <img src="image/cbs.jpg"  style="height: 20px; width: 20px; margin-left: -30px; z-index: 2; border-radius: 5px;">
+                        <h3 onclick="showCbs()" id="cbsheader">CHINA BANK SAVINGS</h3>
+                        <div class="cbs" id="cbs">
+                            <h5>HOUSING LOAN</h5>
+                            <h5>PERSONAL LOAN</h5>
+                            <h5>TEACHER'S LOAN</h5>
+                            <h5>AUTO LOAN</h5>
+                        </div>
+                    </div>
+                    <div>
+                        <img src="image/rbank.png" style="height: 20px; width: 20px; margin-left: -30px; z-index: 2; border-radius: 5px;">
+                        <h3 onclick="showRbank()" id="rbankheader">ROBINSONS BANK</h3>
+                        <div class="rbank" id="rbank">
+                            <h5>CARDS</h5>
+                            <h5>MOTORCYCLE LOAN</h5>
+                        </div>
+                    </div>
+                    <div>
+                        <img src="image/bmi.jpg" style="height: 20px; width: 20px; margin-left: -30px; z-index: 2; border-radius: 5px;">
+                        <h3 onclick="showBmi()" id="bmiheader">BANK OF MAKATI</h3>
+                        <div class="bmi" id="bmi">
+                            <h5>PERSONAL LOAN</h5>
+                        </div>
+                    </div>
+                    <div>
+                        <img src="image/unistar.jpg" style="height: 20px; width: 20px; margin-left: -30px; z-index: 2; border-radius: 5px;">
+                        <h3 onclick="showUnistar()" id="unistarheader">UNISTAR</h3>
+                        <div class="unistar" id="unistar">
+                            <h5>MOTORCYCLE LOAN</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header">
+            <h2>FIELD REPORT</h2>
+        </div>
+        <div class="box1">
+            <div class="grid2">
+                <div class="boxlabel">
+                    <label id="forfieldlabel" onclick="showForField()">FOR FIELD</label>
+                </div>
+                <div class="boxdata">
+                    <div class="bdata" id="forfield">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="box2">
+            <div class="grid2">
+                <div class="boxlabel">
+                    <label id="releasedlabel" onclick="showReleased()">RESULT</label>
+                </div>
+                <div class="boxdata">
+                    <div class="bdata" id="released"></div>
+                </div>
+            </div>
+        </div>
+        <div class="box3">
+            <div class="grid2">
+                <div class="boxlabel">
+                    <label id="remaininglabel" onclick="showRemaining()">REMAINING</label>
+                </div>
+                <div class="boxdata">
+                    <div class="bdata" id="remaining"></div>
+                </div>
+            </div>
+        </div>
+        <div class="box4">
+                <div id="forfieldtable">
+                    <div class="searchInput">
+                        <input type="text" placeholder="NAME SEARCH" id="search1" onkeyup="tableSearchForField()">
+                    </div>
+                    <div class="outer-wrapper">
+                        <div class="table-wrapper">
+                            <table class="table">
+                                <thead>
+                                <th>DL NUMBER</th>
+                                <th>CAMPAIGN</th>
+                                <th>AREA</th>
+                                <th>COLLECTOR</th>
+                                <th>ACCOUNT NAME</th>
+                                <th>DATE RELEASED</th>
+                                </thead>
+                                <tbody id="forfieldata">
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <div id="releasedtabele">
+                    <div class="searchInput">
+                        <input type="text" placeholder="NAME SEARCH" id="search2" onkeyup="tableSearchForResult()">
+                    </div>
+                    <div class="outer-wrapper">
+                        <div class="table-wrapper">
+                            <table class="table">
+                                <thead>
+                                <th>DL NUMBER</th>
+                                <th>CAMPAIGN</th>
+                                <th>DATE FIELD</th>
+                                <th>TIME IN	</th>
+                                <th>TIME OUT</th>
+                                <th>AREA</th>
+                                <th>ACCOUNT NAME	</th>
+                                <th>COLLECTOR</th>
+                                <th>FIELD COLLECTOR	</th>
+                                <th>REMARKS</th>
+                                </thead>
+                                <tbody id="releaseddata">
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <div id="remainingtable">
+                    <div class="searchInput">
+                        <input type="text" placeholder="NAME SEARCH" id="search3" onkeyup="tableSearchForRemaining()">
+                    </div>
+                    <div class="outer-wrapper">
+                        <div class="table-wrapper">
+                            <table class="table">
+                                <thead>
+                                    <th>DL NUMBER</th>
+                                    <th>CAMPAIGN</th>
+                                    <th>AREA</th>
+                                    <th>COLLECTOR</th>
+                                    <th>ACCOUNT NAME</th>
+                                    <th>DATE RELEASED</th>
+                                </thead>
+                                <tbody id="remainingdata">
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="summary.js"></script>
+    <script src="forField.js"></script>
+    <script src="main.js"></script>
+    <script src="fieldResult.js"></script>
+    <script src="remainingForField.js"></script>
+</body>
+</html>
