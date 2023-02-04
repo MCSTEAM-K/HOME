@@ -112,6 +112,10 @@ function showReleased(){
         document.getElementById('forfieldlabel').style.color = 'white'
         document.getElementById('remainingtable').style.display = 'none'
         document.getElementById('remaininglabel').style.color = 'white'
+        document.getElementById('cbslabel').style.display = 'none'
+        document.getElementById('rbanklabel').style.display = 'none'
+        document.getElementById('bmilabel').style.display = 'none'
+        document.getElementById('unistarlabel').style.display = 'none'
     }
     else{
         document.getElementById('releasedtabele').style.display = 'none'
