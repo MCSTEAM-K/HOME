@@ -1,4 +1,4 @@
-fetch('https://script.google.com/macros/s/AKfycbxJa46H9BMfmnJEDJ7a9v5FOeo7X-vjlH5CQi-ivulNJvo3EcRNXkqScnt9yxSkbSZhNg/exec')
+fetch('https://script.google.com/macros/s/AKfycbyCiCrM6qXz8UlKVpyVEJ4iIfWuDzT2sk3YRR_uTaZNgb2tLL6x6qy1DpmFB2Rd2mQC/exec')
 .then(res => res.json())
 .then(data => {
     let tr = data.content.reduce((prev,cur)=>
