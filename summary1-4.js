@@ -9,7 +9,7 @@ fetch(FULL_URL)
 .then(rep => {
     let data = JSON.parse(rep.substr(47).slice(0,-2));
 
-    let field = document.getElementById('field3');
+    let field = document.getElementById('field4');
 
     field.innerText = data.table.rows[5].c[6].v
 })
