@@ -13,6 +13,6 @@ function submitReport(){
 }
 
 function clearReport(){
-    windows.reload()
-    location.reload()
+    windows.reload();
+    location.reload();
 }
