@@ -241,7 +241,7 @@ function tableSearchForField(){
     tr = table.getElementsByTagName('tr');
 
     for (let i = 0; i < tr.length; i++){
-        td = tr[i].getElementsByTagName('td')[4];
+        td = tr[i].getElementsByTagName('td')[1];
         if (td) {
             textvalue = td.textContent || td.innerText;
             if (textvalue.toLocaleUpperCase().indexOf(filter) > -1){
@@ -301,7 +301,7 @@ function tableSearchForRemaining(){
     tr = table.getElementsByTagName('tr');
 
     for (let i = 0; i < tr.length; i++){
-        td = tr[i].getElementsByTagName('td')[4];
+        td = tr[i].getElementsByTagName('td')[1];
         if (td) {
             textvalue = td.textContent || td.innerText;
             if (textvalue.toLocaleUpperCase().indexOf(filter) > -1){
