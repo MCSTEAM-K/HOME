@@ -11,3 +11,7 @@ function showReport(){
 function submitReport(){
     location.reload()
 }
+
+function clearReport(){
+    windows.reload()
+}
