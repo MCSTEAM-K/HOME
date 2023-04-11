@@ -7,3 +7,7 @@ function showReport(){
     document.getElementById('table').style.display = 'none'
     document.getElementById('formtab').style.display = 'block'
 }
+
+function submitReport(){
+    location.reload()
+}
