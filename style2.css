@@ -99,7 +99,7 @@ body{
     grid-template-columns: 25% 25% 25% 25%;
     justify-content: space-between;
   }
-  .mcbstab, .mrbanktab, .mbmitab, .munistartab{
+  .mcbstab, .mrbanktab, .mbmitab, .munistartab, .ubtab, .msbtab{
     display: flex;
     justify-content: center;
   }
@@ -169,7 +169,7 @@ body{
     border: 1px solid white;
     font-size: 12px;
   }
-  #forfieldtable, #releasedtabele, #remainingtable, .cbslabel, .rbanklabel, .bmilabel, .unistarlabel{
+  #forfieldtable, #releasedtable, #remainingtable, #cbslabel, #rbanklabel, #bmilabel, #unistarlabel, #ublabel, #msblabel{
     display: none;
   }
   .searchInput{
@@ -239,7 +239,7 @@ body{
     height: 50px;
     border-radius: 10px;
   }
-  .cbstab, .rbanktab, .bmitab, .unistartab, .ubtab{
+  .cbstab, .rbanktab, .bmitab, .unistartab, .ubtab, .msbtab{
     display: flex;
   }
   .tab{
@@ -250,7 +250,7 @@ body{
   h3, h4, h5{
     color: white;
   }
-  .cbs, .rbank, .bmi, .unistar, .ub{
+  .cbs, .rbank, .bmi, .unistar, .ub, .msb{
       display: none;
       padding-left: 60px;
   }
@@ -355,7 +355,7 @@ body{
     border: 1px solid white;
     font-size: 12px;
   }
-  #forfieldtable, #releasedtabele, #remainingtable, .cbslabel, .rbanklabel, .bmilabel, .unistarlabel{
+  #forfieldtable, #releasedtable, #remainingtable, #cbslabel, #rbanklabel, #bmilabel, #unistarlabel, #ublabel, #msblabel{
     display: none;
   }
   .searchInput{
