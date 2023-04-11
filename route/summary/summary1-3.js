@@ -9,9 +9,9 @@ fetch(FULL_URL)
 .then(rep => {
     let data = JSON.parse(rep.substr(47).slice(0,-2));
 
-    let gilbert = document.getElementById('field3');
+    let field = document.getElementById('field3');
 
-    gilbert.innerText = data.table.rows[3].c[6].v
+    field.innerText = data.table.rows[3].c[6].v
 })
 
 
