@@ -11,7 +11,7 @@ fetch(FULL_URL)
 
     let field = document.getElementById('field3');
 
-    field.innerText = data.table.rows[4].c[6].v
+    field.innerText = data.table.rows[5].c[6].v
 })
 
 
