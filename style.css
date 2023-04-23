@@ -78,16 +78,17 @@
   font-size: 12px;
 }
 
-.buttons{
+.index_login-box .buttons{
     display: flex;
     justify-content: space-between;
     gap: 20px;
+    width: 100%;
 }
   
-.button {
+.index_login-box .button {
     position: relative;
     display: inline-block;
-    padding: 10px 20px;
+    padding: 10px;
     color: white;
     font-size: 16px;
     text-decoration: none;
@@ -102,7 +103,7 @@
     border: 3px solid #ffbf00;
 }
 
-.button:hover {
+.index_login-box .button:hover {
     background: #ffbf00;
     color: black;
     border: 3px solid black;
