@@ -375,6 +375,8 @@
 #formtab .buttons{
     display: flex;
     width: 100%;
+    margin-top: -20px;
+    column-gap: 20px;
 }
   
 #formtab .button {
@@ -388,7 +390,7 @@
     text-transform: uppercase;
     overflow: hidden;
     transition: .5s;
-    margin-top: 0;
+    margin-top: 20px;
     letter-spacing: 4px;
     background: black;
     border: 3px solid #ffbf00;
