@@ -187,3 +187,22 @@ function tableSearchForResultCampaign(){
         }
     }
 }
+
+function submitReport(){
+    location.reload();
+
+}
+
+function clearReport(){
+    var timein = document.getElementById("timein");
+    var timeout = document.getElementById("timeout");
+    var dlnumber = document.getElementById("dlnumber");
+    var remarks = document.getElementById("remarks");
+    var radiobtn = document.getElementById("radiobtn");
+
+    timein.value = "";
+    timeout.value = "";
+    dlnumber.value = "";
+    remarks.value = "";
+    radiobtn.value = "";
+}
