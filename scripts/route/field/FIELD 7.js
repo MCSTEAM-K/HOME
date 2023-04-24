@@ -7,6 +7,6 @@ fetch('https://script.google.com/macros/s/AKfycbxpCQffCRHjVTRyZYqx0-thZQC-5wHB2S
         return prev + `<tr>${td.join("")}</tr>`
     }, "\r")
     // console.log(tr)
-    document.getElementById("dashboard").innerHTML = tr;
+    document.getElementById("fieldDashboardList").innerHTML = tr;
 })
 

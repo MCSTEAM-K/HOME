@@ -6,7 +6,7 @@ fetch('https://script.google.com/macros/s/AKfycbxDSIquSevnAPws9GCA8wIUn6WMZLhxTI
         let td = cur.map(e=>`<td>${e}</td>`)
         return prev + `<tr>${td.join("")}</tr>`
     }, "\r")
-    console.log(tr)
-    document.getElementById("dashboard").innerHTML = tr;
+
+    document.getElementById("fieldDashboardList").innerHTML = tr;
 })
 
