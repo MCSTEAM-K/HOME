@@ -414,10 +414,10 @@
                     <button id="expenseTabBtn" onclick="showExpenseTab()" class="expenseBtn">
                         EXPENSE
                     </button>
-                    <button id="incomeTabBtn" onclick="showIncomeConsoTab()" class="incomeBtn">
+                    <button id="incomeConsoTabBtn" onclick="showIncomeConsoTab()" class="incomeBtn">
                         INCOME CONSO
                     </button>
-                    <button id="expenseTabBtn" onclick="showExpenseConsoTab()" class="expenseBtn">
+                    <button id="expenseConsoTabBtn" onclick="showExpenseConsoTab()" class="expenseBtn">
                         EXPENSE CONSO
                     </button>
                     <form id="income" class="expense" action="https://script.google.com/macros/s/AKfycbw5-Skgudb76_ER9DwfJRG2zLjhcm7e2_ozaQbEgFULg-UJ51_CrUEnzLSR6K9S3LV0TA/exec" method="post">
@@ -485,7 +485,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="expenseButtons">
+                        <div class="accountingButtons">
                             <button type="submit" id="expenseSubmitBtn">Submit</button>
                             <button type="reset" id="expenseResetBtn">Clear</button>
                         </div>
@@ -572,13 +572,13 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="expenseButtons">
+                        <div class="accountingButtons">
                             <button type="submit" id="expenseSubmitBtn">Submit</button>
                             <button type="reset" id="expenseResetBtn">Clear</button>
                         </div>
                     </form>
-                    <div class="table-wrapper">
-                        <table class="tableIncomeConso">
+                    <div class="table-wrapper" id="tableIncomeConso">
+                        <table>
                             <thead>
                                 <th>DATE</th>
                                 <th>TEAM</th>
@@ -593,8 +593,8 @@
                             </tbody>
                         </table>
                     </div>
-                    <!-- <div class="table-wrapper">
-                        <table class="tableExpenseConso">
+                    <div class="table-wrapper" id="tableExpenseConso">
+                        <table>
                             <thead>
                                 <th>DATE</th>
                                 <th>TYPE OF EXPENSE</th>
@@ -609,7 +609,7 @@
                             <tbody id="tableExpenseConsoData">
                             </tbody>
                         </table>
-                    </div> -->
+                    </div>
                 </div>
             </section>
             <section id="directorySection">
@@ -638,5 +638,6 @@
     <script src="../scripts/summary.js"></script>
     <script src="../scripts/incomeConso.js"></script>
     <script src="../scripts/expenseConso.js"></script>
+    <script src="../scripts/accounting.js"></script>
     </body>
 </html>

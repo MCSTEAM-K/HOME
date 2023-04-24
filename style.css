@@ -747,10 +747,6 @@ th{
     color: #f5f5f5;
 }
 
-#forfieldtable, #remainingtable, #rbanklabel, #bmilabel, #unistarlabel, #ublabel, #msblabel{
-    display: none;
-}
-
 .searchInput{
     display: flex;
     justify-content: end;
@@ -988,6 +984,13 @@ th{
 }
 
 /* accounting section starts here */
+#income,
+#expense,
+#tableIncomeConso,
+#tableExpenseConso{
+    display: none;
+}
+
 .accountingContainer{
     height: inherit;
     width: 100%;
@@ -996,43 +999,36 @@ th{
 
 .accountingContainer button{
     height: 50px;
-    font-size: 30px;
-    padding: 5px 10px;
+    font-size: 20px;    
+    padding: 10px;
+    background-color: black;
+    color: #f5f5f5;
     font-weight: bold;
     cursor: pointer;
+    border-radius: 10px;
+    margin: 10px 0;
+    border: 3px solid #ffbf00;
 }
 
 input{
     text-transform: uppercase;
 }
 
-.incomeBtn{
-    background-color: green;
-    color: white;
-}
-
-.expenseBtn{
-    background-color: red;
-    color: white;
+#income,
+#expense{
+    background-color: black;
+    color: #ffbf00;
+    padding: 20px;
+    border-radius: 10px
 }
 
 .accountingContainer,
 .accountingContainer form input,
 .accountingContainer form select{
     font-size: 20px;
+    border-radius: 10px;
 }
 
-#income{
-    padding: 0 20px 20px 20px;
-    background-color: lightgreen;
-    display: none;
-}
-
-#expense{
-    padding: 0 20px 20px 20px;
-    background-color: lightcoral;
-    display: none;
-}
 
 .accountingContainer .row1{
     display: grid;
@@ -1097,33 +1093,51 @@ input{
     font-weight: bold;
 }
 
-.expenseButtons{
+.accountingButtons{
     display: flex;
     justify-content: center;
-    margin-top: 20px;
-}
-
-.expenseButtons #expenseSubmitBtn{
-    background-color: blue;
-    color: white;
-    margin-top: 20px;
-    cursor: pointer;
-    margin: 0 20px;
-}
-
-.expenseButtons #expenseResetBtn{
-    background-color: red;
-    color: white;
-    margin-top: 20px;
-    cursor: pointer;
-    margin: 0 20px;
+    gap: 20px;
 }
 
 #accountingSection .table-wrapper{
     overflow-y: scroll;
-    margin-top: 20px;
     border: 3px solid #ffbf00;
     height: calc(100vh - 430px);
+}
+
+#accountingSection .tableBackground{
+    padding: 20px;
+}
+
+#accountingSection .tableBackground .dashboard_header3 h1{
+    padding: 0;
+}
+
+#accountingSection .tableBackground .dashboard_header3{
+    padding: 0 0 10px 0;
+}
+
+#accountingSection .table-wrapper{
+    background-color: black;
+    border: 3px solid #ffbf00;
+    border-radius: 10px;
+    padding: 20px;
+    height: calc(100vh - 310px);
+}
+
+#accountingSection th{
+    color: white;
+    position: sticky;
+    top: 0px;
+    background-color: #ffbf00;
+    color: black;
+}
+
+#accountingSection  td{
+    border-left: 1px solid #ffbf00;
+    border-bottom: 1px solid #ffbf00;
+    font-size: 14px;
+    color: #f5f5f5;
 }
 
 
