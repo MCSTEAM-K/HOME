@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="../style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" />
 </head>
-<body onload="">
+<body onload="clearReport()">
   <div class="container">
     <div class="topbar">
         <div class="logo">
@@ -110,19 +110,19 @@
           <div class="form">
             <form id="formtab" action="https://script.google.com/macros/s/AKfycbyAj-kDzqFk_onUkyYdOAf3JpIUCwJi3w0OCaUCXMWxPg7-UPKHTuTBFZph5yVUtcBn/exec" method="post">
               <div class="user-box">
-                <input type="time" name="timein" required="" class="timein">
+                <input type="time" name="timein" id="timein" required="" class="timein">
                 <label>TIME IN</label>
               </div>
               <div class="user-box">
-                <input type="time" name="timeout" required="" class="timein">
+                <input type="time" name="timeout" id="timeout" required="" class="timein">
                 <label>TIME OUT</label>
               </div>
               <div class="user-box">
-                <input type="text" name="dlnumber" required="">
+                <input type="text" name="dlnumber" id="dlnumber" required="">
                 <label>DL NUMBER</label>
               </div>
               <div class="user-box">
-                <input type="text" name="remarks" required="">
+                <input type="text" name="remarks" id="remarks" required="">
                 <label>REMARKS</label>
               </div>
               <div class="user-box" id="radiobtnTab"><br>
