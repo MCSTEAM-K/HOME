@@ -1119,6 +1119,14 @@ input{
     margin: 0 20px;
 }
 
+#accountingSection .table-wrapper{
+    overflow-y: scroll;
+    margin-top: 20px;
+    border: 3px solid #ffbf00;
+    height: calc(100vh - 430px);
+}
+
+
 /* Responsive starts here */
 @media (max-width:1115px){
     .sidebar{

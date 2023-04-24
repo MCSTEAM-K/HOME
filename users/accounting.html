@@ -62,6 +62,12 @@
                     </a>
                 </li>
                 <li>
+                    <a onclick="showAccountingSection()" href="#">
+                        <i class="fa-solid fa-calculator"></i>
+                        Accounting
+                    </a>
+                </li>
+                <li>
                     <a onclick="showDirectorySection()" href="#">
                         <i class="fa-solid fa-address-book"></i>
                         Directory
@@ -395,6 +401,216 @@
 
                 </div>
             </section>
+            <!-- accounting -->
+            <section id="accountingSection">
+                <div class="dashboard_header1">
+                    <h1>ACCOUNTING</h1>
+                </div>
+                <div class="accountingContainer">
+                    <button id="incomeTabBtn" onclick="showIncomeTab()" class="incomeBtn">
+                        INCOME
+                    </button>
+                    <button id="expenseTabBtn" onclick="showExpenseTab()" class="expenseBtn">
+                        EXPENSE
+                    </button>
+                    <button id="incomeTabBtn" onclick="showIncomeConsoTab()" class="incomeBtn">
+                        INCOME CONSO
+                    </button>
+                    <button id="expenseTabBtn" onclick="showExpenseConsoTab()" class="expenseBtn">
+                        EXPENSE CONSO
+                    </button>
+                    <form id="income" class="expense" action="https://script.google.com/macros/s/AKfycbw5-Skgudb76_ER9DwfJRG2zLjhcm7e2_ozaQbEgFULg-UJ51_CrUEnzLSR6K9S3LV0TA/exec" method="post">
+                        <div class="row2">
+                            <div class="row2-2">
+                                <label for="">DATE:</label>
+                                <input type="date" name="date">
+                            </div>
+                            <div class="row2-2">
+                                <label for="">TEAM:</label>
+                                <select name="team" id="">
+                                    <option value=""></option>
+                                    <option value="TEAM MARIE">TEAM MARIE</option>
+                                    <option value="TEAM KAREN">TEAM KAREN</option>
+                                </select>
+                            </div>
+                            <div class="row2-2">
+                                <label for="">BANK:</label>
+                                <select name="bank" id="">
+                                    <option value=""></option>
+                                    <option id="TEAM KAREN" value='CHINABANK SAVINGS'>CHINABANK SAVINGS</option>
+                                    <option id="TEAM KAREN" value='ROBINSONS BANK'>ROBINSONS BANK</option>
+                                    <option id="TEAM KAREN" value='BANK OF MAKATI'>BANK OF MAKATI</option>
+                                    <option id="TEAM KAREN" value='UNISTAR'>UNISTAR</option>
+                                    <option id="TEAM KAREN" value='UNIONBANK'>UNIONBANK</option>
+                                    <option id="TEAM KAREN" value='MALAYAN SAVINGS BANK'>MALAYAN SAVINGS BANK</option>
+                                </select>
+                            </div>
+                            <div class="row2-2">
+                                <label for="">CAMPAIGN:</label>
+                                <select name="campaign" id="">
+                                    <option value=""></option>
+                                    <option id="CHINABANK SAVINGS" value='PERSONAL LOAN'>PERSONAL LOAN</option>
+                                    <option id="CHINABANK SAVINGS" value='HANDY SALARY'>HANDY SALARY</option>
+                                    <option id="CHINABANK SAVINGS" value='AUTO LOAN'>AUTO LOAN</option>
+                                    <option id="CHINABANK SAVINGS" value='HOUSING LOAN'>HOUSING LOAN</option>
+                                    <option id="CHINABANK SAVINGS" value="TEACHER'S LOAN">TEACHER'S LOAN</option>
+                                    <option id="ROBINSONS BANK" value='MOTORCYCLE LOAN'>MOTORCYCLE LOAN</option>
+                                    <option id="ROBINSONS BANK" value='PERSONAL LOAN'>PERSONAL LOAN</option>
+                                    <option id="ROBINSONS BANK" value='CARDS'>CARDS</option>
+                                    <option id="BANK OF MAKATI" value='PERSONAL LOAN'>PERSONAL LOAN</option>
+                                    <option id="UNISTAR" value='MOTORCYCLE LOAN'>MOTORCYCLE LOAN</option>
+                                    <option id="UNIONBANK" value='HOUSING LOAN'>HOUSING LOAN</option>
+                                    <option id="MALAYAN SAVINGS BANK" value='MOTORCYCLE LOAN'>MOTORCYCLE LOAN</option>
+                                </select>
+                            </div>
+                            <div class="row2-2">
+                                <label for="">COLLECTOR</label>
+                                <input name="collector" type="text">
+                            </div>
+                        </div>
+                        <div class="row3">
+                            <div class="row3-3">
+                                <div class="">
+                                    <label for="">AMOUNT COLLECTED</label>
+                                    <input name="amountCollected" id="income_amount_collected" type="text">    
+                                </div>
+                                <div class="">
+                                    <label for="">CF RATE</label>
+                                    <input name="cfRate" id="income_cf_rate" type="text">    
+                                </div>
+                                <div class="">
+                                    <label for="">COLLECTION FEE</label>
+                                    <input name="collectionFee" id="income_collectin_fee" type="text" readonly>    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="expenseButtons">
+                            <button type="submit" id="expenseSubmitBtn">Submit</button>
+                            <button type="reset" id="expenseResetBtn">Clear</button>
+                        </div>
+                    </form>
+                    <form id="expense" class="expense" action="https://script.google.com/macros/s/AKfycbyl6tkLMH3lLLG5anrKOp_gIFpOMwcuNFZqZBzmWrKuU1IZISwBmlHdIL_9JUefDrUw/exec" method="post">
+                        <div class="row2">
+                            <div class="row2-2">
+                                <label for="">DATE:</label>
+                                <input type="date" name="date">
+                            </div>
+                            <div class="row2-2">
+                                <label for="">TYPE OF EXPENSE:</label>
+                                <select name="typeOfExpense" id="">
+                                    <option value=""></option>
+                                    <option value="GENERAL EXPENSE">GENERAL EXPENSE</option>
+                                    <option value="TEAM EXPENS">TEAM EXPENSE</option>
+                                    <option value="CAMPAIGN EXPENSE">CAMPAIGN EXPENSE</option>
+                                </select>
+                            </div>
+                            <div class="row2-2">
+                                <label for="">TEAM:</label>
+                                <select name="team" id="">
+                                    <option value=""></option>
+                                    <option value="TEAM MARIE">TEAM MARIE</option>
+                                    <option value="TEAM KAREN">TEAM KAREN</option>
+                                </select>
+                            </div>
+                            <div class="row2-2">
+                                <label for="">BANK:</label>
+                                <select name="bank" id="">
+                                    <option value=""></option>
+                                    <option id="TEAM KAREN" value='CHINABANK SAVINGS'>CHINABANK SAVINGS</option>
+                                    <option id="TEAM KAREN" value='ROBINSONS BANK'>ROBINSONS BANK</option>
+                                    <option id="TEAM KAREN" value='BANK OF MAKATI'>BANK OF MAKATI</option>
+                                    <option id="TEAM KAREN" value='UNISTAR'>UNISTAR</option>
+                                    <option id="TEAM KAREN" value='UNIONBANK'>UNIONBANK</option>
+                                    <option id="TEAM KAREN" value='MALAYAN SAVINGS BANK'>MALAYAN SAVINGS BANK</option>
+                                </select>
+                            </div>
+                            <div class="row2-2">
+                                <label for="">CAMPAIGN:</label>
+                                <select name="campaign" id="">
+                                    <option value=""></option>
+                                    <option id="CHINABANK SAVINGS" value='PERSONAL LOAN'>PERSONAL LOAN</option>
+                                    <option id="CHINABANK SAVINGS" value='HANDY SALARY'>HANDY SALARY</option>
+                                    <option id="CHINABANK SAVINGS" value='AUTO LOAN'>AUTO LOAN</option>
+                                    <option id="CHINABANK SAVINGS" value='HOUSING LOAN'>HOUSING LOAN</option>
+                                    <option id="CHINABANK SAVINGS" value="TEACHER'S LOAN">TEACHER'S LOAN</option>
+                                    <option id="ROBINSONS BANK" value='MOTORCYCLE LOAN'>MOTORCYCLE LOAN</option>
+                                    <option id="ROBINSONS BANK" value='PERSONAL LOAN'>PERSONAL LOAN</option>
+                                    <option id="ROBINSONS BANK" value='CARDS'>CARDS</option>
+                                    <option id="BANK OF MAKATI" value='PERSONAL LOAN'>PERSONAL LOAN</option>
+                                    <option id="UNISTAR" value='MOTORCYCLE LOAN'>MOTORCYCLE LOAN</option>
+                                    <option id="UNIONBANK" value='HOUSING LOAN'>HOUSING LOAN</option>
+                                    <option id="MALAYAN SAVINGS BANK" value='MOTORCYCLE LOAN'>MOTORCYCLE LOAN</option>
+                                </select>
+                            </div>
+                            <div class="row2-2">
+                                <label for="">PAYEE</label>
+                                <input name="payee" type="text">
+                            </div>
+                            <div class="row2-2">
+                                <label for="">TIN NUMBER</label>
+                                <input name="tinNumber" type="text">
+                            </div>
+                        </div>
+                        <div class="row1">
+                            <label for="">ADDRESS</label>
+                            <input name="address" type="text">
+                        </div>
+                        <div class="row3">
+                            <div class="row3-3">
+                                <div class="">
+                                    <label for="">AMOUNT</label>
+                                    <input name="amount" id="expense_amount" type="text">    
+                                </div>
+                                <div class="">
+                                    <label for="">PURCHASES</label>
+                                    <input name="purchases" id="expense_purchases" type="text" readonly>    
+                                </div>
+                                <div class="">
+                                    <label for="">INPUT VAT</label>
+                                    <input name="inputVat" id="expense_inputVat" type="text" readonly>    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="expenseButtons">
+                            <button type="submit" id="expenseSubmitBtn">Submit</button>
+                            <button type="reset" id="expenseResetBtn">Clear</button>
+                        </div>
+                    </form>
+                    <div class="table-wrapper">
+                        <table class="tableIncomeConso">
+                            <thead>
+                                <th>DATE</th>
+                                <th>TEAM</th>
+                                <th>CAMPAIGN NAME</th>
+                                <th>TYPE OF LOAN</th>
+                                <th>COLLECTOR</th>
+                                <th>AMOUNT COLLECTED</th>
+                                <th>CF RATE</th>
+                                <th>COLLECTION FEE</th>
+                            </thead>
+                            <tbody id="tableIncomeConsoData">
+                            </tbody>
+                        </table>
+                    </div>
+                    <!-- <div class="table-wrapper">
+                        <table class="tableExpenseConso">
+                            <thead>
+                                <th>DATE</th>
+                                <th>TYPE OF EXPENSE</th>
+                                <th>TEAM</th>
+                                <th>CAMPAIGN NAME</th>
+                                <th>TYPE OF LOAN</th>
+                                <th>BANK</th>
+                                <th>PERSON RECEIVED</th>
+                                <th>PARTICULARS</th>
+                                <th>AMOUNT</th>
+                            </thead>
+                            <tbody id="tableExpenseConsoData">
+                            </tbody>
+                        </table>
+                    </div> -->
+                </div>
+            </section>
             <section id="directorySection">
                 <div class="dashboard_header1">
                     <h1>DIRECTORY</h1>
@@ -419,5 +635,7 @@
     <script src="../scripts/fieldResult.js"></script>
     <script src="../scripts/ranking.js"></script>
     <script src="../scripts/summary.js"></script>
+    <script src="../scripts/incomeConso.js"></script>
+    <!-- <script src="../scripts/expenseConso.js"></script> -->
 </body>
 </html>

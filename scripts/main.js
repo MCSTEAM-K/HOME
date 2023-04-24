@@ -127,51 +127,6 @@ function showAccountingSection(){
     helpSection.setAttribute("style", "display : none");
 }
 
-var expense_amount = document.getElementById("expense_amount");
-var expense_purchases = document.getElementById("expense_purchases");
-var expense_inputVat = document.getElementById("expense_inputVat");
-
-expense_amount.addEventListener("keyup", expense_function);
-
-function expense_function(){
-    var result1 = expense_amount.value / 1.12;
-    expense_purchases.value = result1.toFixed(2);
-    var result2 = expense_amount.value - expense_purchases.value
-    expense_inputVat.value = result2.toFixed(2);
-}
-
-var income_amount_collected = document.getElementById("income_amount_collected");
-var income_cf_rate = document.getElementById("income_cf_rate");
-var income_collectin_fee = document.getElementById("income_collectin_fee");
-
-income_amount_collected.addEventListener("keyup", income_function);
-income_cf_rate.addEventListener("keyup", income_function);
-
-function income_function(){
-    var result1 = income_amount_collected.value * income_cf_rate.value;
-    income_collectin_fee.value = result1.toFixed(2);
-}
-
-const expense = document.getElementById("expense");
-const income = document.getElementById("income");
-const incomeTabBtn = document.getElementById("incomeTabBtn");
-const expenseTabBtn = document.getElementById("expenseTabBtn");
-
-
-function showIncomeTab(){
-    expense.setAttribute("style", "display : none");
-    income.setAttribute("style", "display : block");
-    incomeTabBtn.setAttribute("style", "color : #ffbf00");
-    expenseTabBtn.setAttribute("style", "color : white");
-}
-
-function showExpenseTab(){
-    expense.setAttribute("style", "display : block");
-    income.setAttribute("style", "display : none");
-    incomeTabBtn.setAttribute("style", "color : white");
-    expenseTabBtn.setAttribute("style", "color : #ffbf00");
-}
-
 // Directory section
 function showDirectorySection(){
     dashboardSection.setAttribute("style", "display : none");
