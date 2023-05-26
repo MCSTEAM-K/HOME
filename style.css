@@ -1140,6 +1140,33 @@ input{
     color: #f5f5f5;
 }
 
+/* repossessor accounts */
+.repo_head{
+    padding-top: 20px;
+    position: fixed;
+    background-color: #ffbf00;
+    color: black;
+}
+
+.repo_list td{
+    border-bottom: 1px solid #ffbf00;
+    border-right: 1px solid #ffbf00;
+}
+
+@counter-style myCounterStyle {
+    system: decimal; /* Specify the numbering system */
+    symbols: "A" "B" "C" "D" "E"; /* Set custom symbols for the numbers */
+    suffix: " "; /* Add a space after each number */
+  }
+
+tbody tr td:nth-child(2){
+    text-align: end;
+    list-style: myCounterStyle;
+}
+
+tbody tr td:nth-child(3){
+    text-align: end;
+}
 
 /* Responsive starts here */
 @media (max-width:1115px){
