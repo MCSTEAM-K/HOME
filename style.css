@@ -1141,6 +1141,15 @@ input{
 }
 
 /* repossessor accounts */
+#fieldTable .table-wrapper-repo{
+    overflow-y: scroll;
+    height: calc(100vh - 350px);
+    width: calc(100% - 40px);
+    box-sizing: border-box;
+    position: absolute;
+    z-index: 1;
+}
+
 .repo_head{
     padding-top: 20px;
     position: fixed;
