@@ -19,10 +19,10 @@ fetch(FULL_URL)
     let remaining = document.getElementById('remaining');
     let cRate = document.getElementById('cRate');
 
-    finished.innerText = data.table.rows[11].c[6].v;
-    accounts.innerText = data.table.rows[11].c[7].v;
-    remaining.innerText = data.table.rows[11].c[7].v - data.table.rows[11].c[6].v;
-    cRate.innerText = formatter.format(data.table.rows[11].c[6].v / data.table.rows[11].c[7].v);
+    finished.innerText = data.table.rows[13].c[6].v;
+    accounts.innerText = data.table.rows[13].c[7].v;
+    remaining.innerText = data.table.rows[13].c[7].v - data.table.rows[13].c[6].v;
+    cRate.innerText = formatter.format(data.table.rows[13].c[6].v / data.table.rows[13].c[7].v);
 })
 
 
