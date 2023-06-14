@@ -215,10 +215,6 @@
     grid-gap: 10px;
 }
 
-.user-box #dlnumber{
-    text-transform: uppercase;
-}
-
 #nameBox{
     padding: 0 20px !important;
 }
