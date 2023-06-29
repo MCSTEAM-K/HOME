@@ -5,10 +5,11 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>FIELD 6</title>
+  <link rel="shortcut icon" href="../img/mcsc.png" type="image/x-icon">
   <link rel="stylesheet" href="../style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" />
 </head>
-<body onload="clearReport()">
+<body>
   <div class="container">
     <div class="topbar">
         <div class="logo">
@@ -62,7 +63,7 @@
         <section id="field_dashboardSection">
           <h2>DASHBOARD</h2>
           <div class="login-box" id="nameBox">
-            <div>MICHAEL BUNCIO</div>
+            <div id="user_name"></div>
           </div>
           <div class="login-box">
             <div>
@@ -110,19 +111,19 @@
           <div class="form">
             <form id="formtab" action="https://script.google.com/macros/s/AKfycbyAj-kDzqFk_onUkyYdOAf3JpIUCwJi3w0OCaUCXMWxPg7-UPKHTuTBFZph5yVUtcBn/exec" method="post">
               <div class="user-box">
-                <input type="time" name="timein" id="timein" required="" class="timein">
+                <input type="time" name="timein" required="" class="timein">
                 <label>TIME IN</label>
               </div>
               <div class="user-box">
-                <input type="time" name="timeout" id="timeout" required="" class="timein">
+                <input type="time" name="timeout" required="" class="timein">
                 <label>TIME OUT</label>
               </div>
               <div class="user-box">
-                <input type="text" name="dlnumber" id="dlnumber" required="" style="text-transform: uppercase;">
+                <input type="text" name="dlnumber" required="" style="text-transform: uppercase;">
                 <label>DL NUMBER</label>
               </div>
               <div class="user-box">
-                <input type="text" name="remarks" id="remarks" required="">
+                <input type="text" name="remarks" required="">
                 <label>REMARKS</label>
               </div>
               <div class="user-box" id="radiobtnTab"><br>
@@ -138,7 +139,7 @@
               </div>
               <div></div>
               <div class="messenger">
-                <input type="text" name="messenger" required="" value="MICHAEL BUNCIO">
+                <input type="hidden" name="messenger" id="user">
                 <label>MESSENGER</label>
               </div>
               <div class="buttons">
@@ -146,7 +147,7 @@
                     <button type="submit" class="button" onclick="submitReport()">Submit</button>
                 </div>
                 <div class="button2">
-                    <button type="reset" class="button">Clear</button>
+                    <button type="reset" class="button" onclick="clearReport()">Clear</button>
                 </div>
             </form>
           </div>
@@ -164,5 +165,6 @@
   <script src="../scripts/field.js"></script>
   <script src="../scripts/route/field/FIELD 6.js"></script>
   <script src="../scripts/route/summary/summary1-6.js"></script>
+  <script src="../scripts/route/user_aacount/user_field6.js"></script>
 </body>
 </html>

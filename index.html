@@ -43,7 +43,7 @@
             </div>
             <div class="buttons">
                 <div class="button1">
-                    <button type="submit" class="button">Login</button>
+                    <button id="submit_button" type="submit" class="button">Login</button>
                 </div>
                 <div class="button2">
                     <button type="reset" class="button" id="resetbtn">Clear</button>
@@ -53,86 +53,6 @@
     </div>
     <script>
         const form = document.forms.login;
-        const username = form.username;
-        const password = form.password;
-
-        form.addEventListener('submit', function(event){
-            event.preventDefault();
-
-            if(username.value == 'edwin' && password.value == 'mcsedwin'){
-                window.location.assign("users/field1.html")
-            }
-            else if (username.value == 'janson' && password.value == 'mcsjanson'){
-                window.location.assign("users/field2.html")
-            }
-            else if(username.value == 'jericho' && password.value == 'mcsjericho'){
-                window.location.assign("users/field3.html")
-            }
-            else if(username.value == 'aldrin' && password.value == 'mcsaldrin'){
-                window.location.assign("users/field4.html")
-            }
-            else if(username.value == 'wency' && password.value == 'mcswency'){
-                window.location.assign("users/field5.html")
-            }
-            else if(username.value == 'michael' && password.value == 'mcsmichael'){
-                window.location.assign("users/field6.html")
-            }
-            else if(username.value == 'virgilio' && password.value == 'mcsvirgilio'){
-                window.location.assign("users/field7.html")
-            }
-            else if(username.value == 'johnbryan' && password.value == 'mcsjohnbryan'){
-                window.location.assign("users/field8.html")
-            }
-            else if(username.value == 'jesler' && password.value == 'mcsjesler'){
-                window.location.assign("users/field9.html")
-            }
-            else if(username.value == 'johnlynrd' && password.value == 'mcsjohnlynrd'){
-                window.location.assign("users/field10.html")
-            }
-            else if(username.value == 'cris' && password.value == 'mcscris'){
-                window.location.assign("users/field11.html")
-            }
-            else if(username.value == 'erwin' && password.value == 'mcserwin'){
-                window.location.assign("users/field12.html")
-            }
-            else if(username.value == 'edmund' && password.value == 'mcsedmund'){
-                window.location.assign("users/field13.html")
-            }
-            else if(username.value == 'emerson' && password.value == 'mcsemerson'){
-                window.location.assign("users/field14.html")
-            }
-            else if(username.value == 'field15' && password.value == 'mcsfield15'){
-                window.location.assign("users/field15.html")
-            }
-            else if(username.value == 'field16' && password.value == 'mcsfield16'){
-                window.location.assign("users/field16.html")
-            }
-            else if(username.value == 'field17' && password.value == 'mcsfield17'){
-                window.location.assign("users/field17.html")
-            }
-            else if(username.value == 'field18' && password.value == 'mcsfield18'){
-                window.location.assign("users/field18.html")
-            }
-            else if(username.value == 'field19' && password.value == 'mcsfield19'){
-                window.location.assign("users/field19.html")
-            }
-            else if(username.value == 'field20' && password.value == 'mcsfield20'){
-                window.location.assign("users/field20.html")
-            }
-            else if(username.value == 'repo1' && password.value == 'repo1'){
-                window.location.assign("users/repo1.html")
-            }
-            else if(username.value == 'admin' && password.value == 'admin'){
-                window.location.assign("users/admin.html")
-            }
-            else if(username.value == 'accounting' && password.value == 'accounting'){
-                window.location.assign("users/accounting.html")
-            }
-            else{
-                document.getElementById('error-message').innerText = 'Username and Password did not match'
-                document.getElementById('error-message').style.color = 'red'
-            }
-        })
 
         form.addEventListener('reset', function(event){
             event.preventDefault();
@@ -151,6 +71,7 @@
         }
 
     </script>
+    <script src="scripts/user_account.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/apexcharts/3.37.1/apexcharts.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
 </body>
