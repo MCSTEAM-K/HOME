@@ -24,11 +24,3 @@ fetch(FULL_URL)
     remaining.innerText = data.table.rows[17].c[7].v - data.table.rows[17].c[6].v;
     cRate.innerText = formatter.format(data.table.rows[17].c[6].v / data.table.rows[17].c[7].v);
 })
-
-
-    
-
-
-
-
-
